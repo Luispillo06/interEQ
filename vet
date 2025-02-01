@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interEQ</title>
+    <link rel="icon" href="logo.png.png" type="image/png">
+
+    <style>
+        /* Contenedor que usa flexbox */
+        .contenedor {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 100vh; /* Toma el alto total de la pantalla */
+            background-color: #ffffff;
+        }
+
+        /* Rectángulo */
+        .rectangulo {
+            width: 500px;
+            height: 400px;
+            background-color: #ffffff;
+            border-radius: 130px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            align-items: center; /* Centra el texto verticalmente */
+            color: rgb(0, 0, 0); /* Color del texto */
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center; /* Centra el texto en varias líneas */
+            padding: 10px;
+            font-family: Helvetica, sans-serif;
+            color: rgb(182, 82, 207);
+
+            #usuario {
+            width: 250px; /* Ancho del input */
+            height: 40px; /* Alto del input */
+            text-align: center; /* Centra el texto dentro del input */
+            font-size: 20px; /* Tamaño del texto */
+            border: 2px solid #9251a4; /* Borde azul */
+            border-radius: 5px; /* Bordes redondeados */
+            outline: none; /* Quita el borde de selección */
+        }
+
+        /* Estilo del placeholder */
+        #usuario::placeholder {
+            color: gray; /* Color del texto del placeholder */
+            text-align: center; /* Centra el texto del placeholder */
+        }
+        #contraseña {
+            width: 250px; /* Ancho del input */
+            height: 40px; /* Alto del input */
+            text-align: center; /* Centra el texto dentro del input */
+            font-size: 20px; /* Tamaño del texto */
+            border: 2px solid #9251a4; /* Borde azul */
+            border-radius: 5px; /* Bordes redondeados */
+            outline: none; /* Quita el borde de selección */
+        }
+
+        /* Estilo del placeholder */
+        #contraseña::placeholder {
+            color: gray; /* Color del texto del placeholder */
+            text-align: center; /* Centra el texto del placeholder */
+        }
+        .header {
+            display: flex; /* Activa flexbox */
+            align-items: center; /* Alinea verticalmente */
+            padding: 10px 20px; /* Espaciado interno */
+            background-color: #3498db; /* Color de fondo */
+            color: white; /* Color del texto */
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="contenedor">
+        <div class="rectangulo">
+            <br>
+            <h1>interEQ</h1>
+            <br><br>
+            <label for="usuario"></label>
+            <input type="text" id="usuario" name="usuario" placeholder="usuario" required><br><br>
+            <label for="contraseña"></label>
+            <input type="text" id="contraseña" name="contraseña" placeholder="contraseña" required><br><br>
+        </div>
+    </div>
+
+</body>
+</html>
